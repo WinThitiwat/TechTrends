@@ -1,1 +1,2 @@
 # TechTrends
+My first commit
