@@ -1,3 +1,11 @@
+## originally provided ##
+.env/
+.venv/
+.vagrant/
+.myvenv/
+__pycache__/
+.vagrant/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
