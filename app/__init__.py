@@ -4,7 +4,7 @@ from config import Config
 def create_app(config_class=Config):
     # Define the Flask application
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'your secret key'
+    app.config['SECRET_KEY'] = Config.SECRET_KEY
 
     # Register blueprints
     from app.main import bp as main_bp

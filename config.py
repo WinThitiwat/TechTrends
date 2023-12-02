@@ -1,3 +1,3 @@
 
 class Config(object):
-    pass
+    SECRET_KEY = "Your secret key"
