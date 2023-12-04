@@ -1,0 +1,39 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+docker build -t techtrend .      
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+docker run -d -p 3111:3111 techtrend  
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+docker logs c2365f189180
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+INFO | app | 2023-12-04 05:47:10 | App Running...
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+WARNING | werkzeug | 2023-12-04 05:47:10 |  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO | werkzeug | 2023-12-04 05:47:10 |  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO | werkzeug | 2023-12-04 05:47:10 |  * Restarting with stat
+INFO | app | 2023-12-04 05:47:10 | App Running...
+WARNING | werkzeug | 2023-12-04 05:47:10 |  * Debugger is active!
+INFO | werkzeug | 2023-12-04 05:47:10 |  * Debugger PIN: 104-431-498
+INFO | werkzeug | 2023-12-04 05:47:27 | 192.168.65.1 - - [04/Dec/2023 05:47:27] "GET / HTTP/1.1" 200 -
+INFO | werkzeug | 2023-12-04 05:47:27 | 192.168.65.1 - - [04/Dec/2023 05:47:27] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO | app | 2023-12-04 05:49:21 | Health status request successful
+INFO | werkzeug | 2023-12-04 05:49:21 | 192.168.65.1 - - [04/Dec/2023 05:49:21] "GET /healthz HTTP/1.1" 200 -
+INFO | werkzeug | 2023-12-04 05:49:23 | 192.168.65.1 - - [04/Dec/2023 05:49:23] "GET / HTTP/1.1" 200 -
+INFO | werkzeug | 2023-12-04 05:49:23 | 192.168.65.1 - - [04/Dec/2023 05:49:23] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO | werkzeug | 2023-12-04 05:49:25 | 192.168.65.1 - - [04/Dec/2023 05:49:25] "GET /create HTTP/1.1" 200 -
+INFO | werkzeug | 2023-12-04 05:49:25 | 192.168.65.1 - - [04/Dec/2023 05:49:25] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO | app | 2023-12-04 05:50:18 | A new article called "This is a test" is created.
+INFO | werkzeug | 2023-12-04 05:50:18 | 192.168.65.1 - - [04/Dec/2023 05:50:18] "POST /create HTTP/1.1" 302 -
+INFO | werkzeug | 2023-12-04 05:50:18 | 192.168.65.1 - - [04/Dec/2023 05:50:18] "GET /index HTTP/1.1" 200 -
+INFO | werkzeug | 2023-12-04 05:50:18 | 192.168.65.1 - - [04/Dec/2023 05:50:18] "GET /static/css/main.css HTTP/1.1" 304 -
